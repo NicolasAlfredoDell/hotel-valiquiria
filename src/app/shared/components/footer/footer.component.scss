@@ -1,0 +1,47 @@
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #F1F4DF;
+}
+
+hr {
+  color: #767C7D;
+}
+
+i {
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 0px;
+}
+
+p:hover {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.footer-top {
+  background-color: #eff3d9;
+  height: 75px;
+}
+
+.title {
+  color: #CA9050;
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 950px) {
+  .margin-left-30 {
+      margin-left: 30px;
+  }
+  .margin-left-60 {
+      margin-left: 60px;
+  }
+}

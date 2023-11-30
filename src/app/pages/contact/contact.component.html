@@ -1,0 +1,59 @@
+<div id="contact" class="row p-2 p-md-5 mb-2 mb-md-0">
+  <div data-aos="fade-up" class="col-12 card mt-5">
+    <div class="row">
+      <div class="col-7 d-none d-md-block p-0">
+        <img src="assets/images/contactus/bg.avif" alt="Contactate con nosotros" class="h-100 w-100">
+      </div>
+
+      <div class="col-12 col-md-5 align-items-center d-flex justify-content-center p-4 p-md-5">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="h2">
+              Contactate con nosotros
+            </h2>
+          </div>
+
+          <div class="col-12 px-3">
+            <form [formGroup]="form" (ngSubmit)="sendMail()">
+              <div class="form-group mb-2">
+                <label for="exampleFormControlInput1">Nombre</label>
+                <input formControlName="name" type="text" class="form-control" id="exampleFormControlInput1">
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-md-6 form-group mb-2">
+                  <label for="exampleFormControlInput1">Telefono</label>
+                  <input formControlName="phone" type="tel" class="form-control" id="exampleFormControlInput1">
+                </div>
+
+                <div class="col-12 col-md-6 form-group mb-2">
+                  <label for="exampleFormControlInput1">Cantidad de personas</label>
+                  <input formControlName="cant" type="number" class="form-control" id="exampleFormControlInput1">
+                </div>
+              </div>
+
+              <div class="form-group mb-3">
+                <label for="exampleFormControlTextarea1">Mensaje</label>
+                <textarea formControlName="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100">
+                Enviar
+              </button>
+
+              <div class="row text-center">
+                <div class="col-12 text-danger">
+                  <small *ngFor="let messageError of messagesErrors">
+                    <small>
+                      {{messageError}}
+                    </small>
+                  </small>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

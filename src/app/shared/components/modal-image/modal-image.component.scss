@@ -1,0 +1,30 @@
+img {
+    height: 95vh;
+}
+
+.button-close {
+    position: absolute;
+}
+
+.main {
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 9999;
+}
+
+@media screen and ( max-width: 1200px  ) { }
+
+@media screen and ( max-width: 992px   ) {
+    img {
+        height: 95vw;
+    }
+}
+
+@media screen and ( max-width: 768px ) {
+    img {
+        height: 95vw;
+    }
+}

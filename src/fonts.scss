@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Raleway:wght@100&display=swap');
+
+h1, h2, li, .fontDGO {
+  font-family: 'Dela Gothic One';
+}
+
+button, h3, h4, h5, h6, input::-webkit-input-placeholder, label, p, .fontPD > li, .spanPD {
+  font-family: 'Playfair Display';
+}
+
+h3, h4 {
+  color: #914646;
+}
+
+.text-facebook {
+  color: #2f55a4;
+}
+
+.text-instagram {
+  color: #E1306C;
+}
+
+.text-whatsapp {
+  color: #25D366;
+}

@@ -1,0 +1,42 @@
+hr {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+iframe {
+  height: 470px;
+  width: 100%;
+}
+
+.access-nort {
+  text-align: justify;
+}
+
+.access-sourth {
+  text-align: justify;
+}
+
+.card {
+  border-radius: 5px;
+}
+
+.access-sourth .card, .access-nort .card {
+  height: 250px;
+}
+
+.title-suscribe {
+  color: #CA9050 !important;
+}
+
+
+@media screen and ( max-width: 500px ) {
+
+  iframe {
+    height: 50vh;
+  }
+
+  .access-sourth .card, .access-nort .card {
+    height: auto;
+  }
+
+}

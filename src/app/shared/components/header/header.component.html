@@ -1,0 +1,25 @@
+<header #header class="row row-main mb-5" [ngStyle]="{'background-image': 'url(' + 'assets/images/header/' + backgroundImageNumber +'.jpeg' + ')'}">
+  <div class="align-items-end col-12 div-main d-flex">
+    <h1 #title class="fade-container h1 pointer p-4 text-white">
+      <span>Alquileres</span>
+
+      <br>
+
+      <span>Valquiria</span>
+
+      <br>
+
+      <span (click)="openUrl('geo:-40.8006785194452, -65.07288941528233')">
+        <i class="fa-solid fa-map-pin" style="margin-left: 8px; margin-right: 7px;"></i>
+        Golfo San Jorge 745. Las Grutas, San Antonio Oeste
+      </span>
+
+      <br>
+
+      <span (click)="openUrl('mailto:alquileresvalquiria@hotmail.com')">
+        <i class="fa-solid fa-envelope" style="margin-left: 4px; margin-right: 5px;"></i>
+        alquileresvalquiria@hotmail.com
+      </span>
+    </h1>
+  </div>
+</header>

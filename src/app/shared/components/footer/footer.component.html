@@ -1,0 +1,45 @@
+<div class="d-flex footer-top row">
+  <div data-aos="fade-up" class="col-12 text-center py-4">
+    <i class="fa-brands fa-facebook pointer text-muted" (click)="openUrl('https://www.facebook.com/valquiria.apart?mibextid=9R9pXO')"></i>
+    <i class="fa-brands fa-instagram mx-3 pointer text-muted" (click)="openUrl('https://www.instagram.com/valquiria_apart/')"></i>
+    <i class="fa-brands fa-whatsapp mr-5 pointer text-muted" (click)="openUrl('https://api.whatsapp.com/send?phone=+542920418546&text=Hola, me gustaria saber sobre la disponibilidad, horarios y precios de alquiler. Muchas gracias!')"></i>
+  </div>
+</div>
+
+<footer class="row pt-5 pt-md-5">
+  <div data-aos="fade-up" class="col-12 pb-4 px-4">
+      <div class="d-flex justify-content-around mb-5 row pb-5">
+          <div class="col-12 col-md-5">
+            <h2 class="h2 m-0 title"><strong>Alquileres <br> Valquiria</strong></h2>
+          </div>
+
+          <div class="col-12 col-md-3 mt-4 mt-md-3">
+            <p class="mb-md-4"><strong>Golfo San Jorge 745 <br> Las Grutas, San Antonio Oeste</strong></p>
+            <p class="mb-1"><i class="d-none d-md-inline fa-regular fa-envelope pointer" style="margin-right: 3px;"></i>alquileresvalquiria@hotmail.com</p>
+            <p class="mb-1"><i class="d-none d-md-inline fa-brands fa-whatsapp pointer" style="margin-right: 3px;"></i>2920418546</p>
+            <p class="mb-1"><i class="d-none d-md-inline fa-brands fa-whatsapp pointer" style="margin-right: 3px;"></i>2920446441</p>
+          </div>
+
+          <div class="col-12 col-md-3 mt-4 mt-md-3">
+            <hr class="d-md-none">
+              <p class="mb-3"><strong class="text-dark">ENLACES RAPIDOS</strong></p>
+
+              <a *ngFor="let link of links; let isFirst = first" (click)="scrollTo(link.target)">
+                <p>{{link.title}}</p>
+              </a>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-12">
+              <hr>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-12 text-end">
+              <p class="text-dark"><strong>@ 2023 Alquileres Valquiria</strong><br class="d-md-none"> Todos los derechos reservados.</p>
+          </div>
+      </div>
+  </div>
+</footer>

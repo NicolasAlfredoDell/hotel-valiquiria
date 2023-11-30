@@ -1,0 +1,15 @@
+section {
+  background-color: #F2F4F5;
+}
+
+.img {
+  height: 350px;
+}
+
+@media screen and ( max-width: 500px ) {
+
+  video {
+    width: 100%;
+  }
+
+}

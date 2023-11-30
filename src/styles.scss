@@ -1,0 +1,31 @@
+@import url('./animations.scss');
+@import url('./fonts.scss');
+
+body {
+  overflow-x: hidden !important;
+}
+
+textarea:focus, input:focus{
+  border: 1px solid #CA9050 !important;
+  box-shadow: 0 0 5px #CA9050 !important;
+  outline: none !important;
+}
+
+.btn-primary {
+  background-color: #CA9050;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #CA9050;
+}
+
+.card {
+  border: none;
+  border-radius: 25px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
